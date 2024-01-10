@@ -108,7 +108,7 @@ def svd(train, test,length,moviefile):
 		print("Model saved in file: %s" % save_path)
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		# Bind the socket to the port
-		server_address = ('0.0.0.0', 81)
+		server_address = ('0.0.0.0', 5000)
 		print >>sys.stderr, 'starting up on %s port %s' % server_address
 		sock.bind(server_address)
 		sock.listen(1)
