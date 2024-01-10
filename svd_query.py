@@ -53,7 +53,7 @@ if __name__ == '__main__':
        pred_batch = sess.run(infer, feed_dict)
        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
        # Bind the socket to the port
-       server_address = ('0.0.0.0', 5000)
+       server_address = ('0.0.0.0', 81)
        print >>sys.stderr, 'starting up on %s port %s' % server_address
        sock.bind(server_address)
        sock.listen(1)
